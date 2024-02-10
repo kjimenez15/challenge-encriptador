@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Encriptador</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Challenge encriptador</h1>
+    </header>
+
+    <div class="caja">
+        <label for="mensaje">Introduce un mensaje</label>
+        <textarea id="mensaje" cols="70" rows="30" class="area-texto" placeholder="Escribe algo" required></textarea>
+        <section class="botones">
+            <button class="boton" onclick="encriptar()">Encriptar</button>
+            <button class="boton" onclick="desencriptar()">Desencriptar</button>
+        </section>
+        
+    </div>
+
+    <div class="caja">
+        <label>Texto Convertido</label>
+        <textarea id="mensaje-convertido" cols="70" rows="30" class="area-texto" readonly></textarea>
+        <button id="boton-copiar" class="boton" onclick="copiar()">Copiar al portapapeles</button>
+    </div>
+
+    <script src="encriptador.js" defer></script>
+
+</body>
+</html>
